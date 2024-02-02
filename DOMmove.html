@@ -1,0 +1,34 @@
+<html>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=> {
+            //문서 객체 읽어들이고 생성하기
+            const divA = document.querySelector('#first')
+            const divB = document.querySelector('#second')
+            const h1 = document.createElement('h1')
+            h1.textContent = '이동하는 h1 태그'
+
+            //서로 번갈아가면서 실행하는 함수를 구현합니다
+            const toFirst = () => { // 2. 호출되고
+                divA.appendChild(h1)
+                setTimeout(toSecond, 1000) //3.1초뒤에 toSecond호출
+            }
+            const toSecond =() => { //4.second호풓
+                divB.appendChild(h1)
+                setTimeout(toFirst,1000) // 5.1초뒤에 toFirst호출
+            }
+            toFirst() // 1.이걸로 toFirst함수 호출!
+        })
+    </script>
+
+
+
+    <body>
+        <div id="first">
+            <h1>첫 번째 div 태그 내부</h1>
+        </div>
+        <hr>
+        <div id="second">
+            <h1>두 번째 div 태그 내부</h1>
+        </div>
+    </body>
+</html>
