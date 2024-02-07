@@ -1,0 +1,24 @@
+<html>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=> {
+            let counter = 0
+            const h1 = document.querySelector('h1')
+//          문서객체.addEventListener(이벤트이름, 콜백함수)
+            h1.addEventListener('click',(event) => {
+                counter++
+                h1.textContent  = `클릭 횟수 :${counter}` // body->h1을 동적으로 가져오기 위함 
+            })
+        })
+    </script>
+    <style>
+        h1 {
+
+            user-select: none;
+        }
+        
+    </style>
+    <body>
+        <h1>클릭횟수 : 0</h1>
+    </body>
+
+</html>

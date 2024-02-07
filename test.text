@@ -1,0 +1,14 @@
+document.addEventListener('DOMContentLoaded',()->{
+    // 내가 작성할 코드
+})
+: document라는 문서 객체의 DOMContentLoaded 이벤트가 발생했을 때,
+매개 변수로 지정한 콜백함수를 실행해라라는 의미
+
+#이벤트 란
+모든 문서 객체가 생성, 클릭 , 마우스를 위에 올릴 때 발생
+
+#이벤트리스너 (= #이벤트핸들러 )란
+이벤트가 발생할 떄 실행할 함수
+
+
+ user-select: none; 는 마우스로 드래그 하지 못함.
