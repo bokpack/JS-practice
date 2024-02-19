@@ -1,0 +1,12 @@
+<script>
+    try {
+        willExcept.byeBye()
+        // willExcept이라는 객체는 존재하지 않고
+        // byeBye() 라는 메소드도 존재하지 않기 때문에
+        //오류가 발생한 것임!! -> try는 실행되지 않음
+        console.log("try 구문의 마지막 줄")
+    } catch(excption) {
+        console.log("catch 구문의 마지막 줄")
+        // catch가 실행된다
+    }
+</script>
