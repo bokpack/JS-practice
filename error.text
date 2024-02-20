@@ -20,3 +20,12 @@ finally{
 try 구문 안에서 예외를 발생하면 이를 catch구문에서 처리함
 finally 구문을 사용하는 이유 
 : return이 있을 경우가 있기 때문에..!
+
+#예외객체 (exception object)
+#throw
+try {
+   
+} catch (exception) {
+    // exception이 예외객체(catch의 괄호에 쓴 것) e라고 쓰기도 함
+}
+name : 예외 이름 , message : 예외 메시지
