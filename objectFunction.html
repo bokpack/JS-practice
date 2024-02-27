@@ -1,0 +1,28 @@
+<script>
+// 객체를 처리하는 함수
+// 객체를 선언합니다.
+const students = []
+students.push({이름 : '주혁',국어 :97, 영어: 98, 수학 : 88, 과학:90})
+students.push({이름 : '이진',국어 :92, 영어: 98, 수학 : 96, 과학:88})
+students.push({이름 : '다나',국어 :76, 영어: 96, 수학 : 94, 과학:86})
+students.push({이름 : '호재',국어 :98, 영어: 52, 수학 : 98, 과학:92})
+
+//객체를 처리하는 함수를 선언합니다.
+// getSumOf() 와 getAverageOf()라는 이름으로 함수를 만들고
+// 매개변수로 학생객체를 받아 계산함
+function getSumOf(student) {
+    return student.국어 + student.영어 + student.수학 + student.과학
+}
+
+function getAverageOf (student) {
+    return getSumOf(student)/4
+}
+
+//출력합니다
+let output = '이름\t총점\t평균\n'
+for(const s of students) {
+    output += `${s.이름}\t${getSumOf(s)}점\t${getAverageOf(s)}점\n`
+}
+console.log(output)
+
+</script>
