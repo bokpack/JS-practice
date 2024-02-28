@@ -1,0 +1,20 @@
+<script>
+    // 생성자 함수와 속성 추가하기
+    class Baby {
+        constructor (이름 , 국어 , 영어 , 한국사 , 행정법) {
+            this.이름 = 이름
+            this.국어 = 국어
+            this.영어 = 영어
+            this.한국사 = 한국사
+            this.행정법 = 행정법
+        }
+    }
+    //객체를 선언합니다 
+    const babies = []
+    babies.push(new Baby('호재',87,98,88,90))
+    babies.push(new Baby('주혁',92,98,96,88))
+    babies.push(new Baby('다나',76,96,94,100))
+    babies.push(new Baby('이진',98,84,88,92))
+
+    console.log(babies[3]);
+</script>
